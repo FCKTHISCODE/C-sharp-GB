@@ -1,8 +1,8 @@
 ﻿Console.WriteLine ("Enter a number");
-int nummber = Convert.ToInt32(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine());
 int output = 2;
 
-while (output <= nummber)
+while (output <= number)
 {
     Console.WriteLine (output);
     output+=2;
