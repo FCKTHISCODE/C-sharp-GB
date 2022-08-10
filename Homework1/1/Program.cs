@@ -6,8 +6,8 @@
     return result; // Возвращает результат
 }
 
-int number1 = Prompt("Input first number");
-int number2 = Prompt("Input second number");
+int number1 = Prompt("Input first number ");
+int number2 = Prompt("Input second number ");
 int min;
 int max;
 
@@ -24,4 +24,4 @@ else
 }
 
 
-Console.WriteLine 
+Console.Write ($"Max number is {max}, Min number is {min}");
