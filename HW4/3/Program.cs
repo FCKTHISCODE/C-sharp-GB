@@ -26,14 +26,17 @@ int Prompt(string message)
     return result; // Возвращает результат
 }
 
+int secondmax(int[] array)  //пока просто максимум возвращает, не готово
+{
+    int maxvalue = array.Max();
+    return maxvalue;
+}
+
 int ArrayLenght = Prompt("ВВеди длину массива  ");
 int min_Array = Prompt("ВВеди минимум в массиве  ");
 int max_Array = Prompt("ВВеди максимум в массиве  ");
 
-int [] ARRAY = CreateArray(ArrayLenght, min_Array, max_Array);
-PrintArray (ARRAY);
+int[] ARRAY = CreateArray(ArrayLenght, min_Array, max_Array);
+PrintArray(ARRAY);
 
-
-
-
-
+Console.WriteLine(secondmax(ARRAY));  //печатает пока максимум в массиве
