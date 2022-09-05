@@ -1,4 +1,6 @@
-﻿int Prompt(string message)
+﻿// Напишите программу вычисления функции Аккермана с помощью рекурсии. 
+
+int Prompt(string message)
 {
     System.Console.Write(message); // Вывести сообщение
     string readValue = Console.ReadLine(); // Считывает с консоли строку
