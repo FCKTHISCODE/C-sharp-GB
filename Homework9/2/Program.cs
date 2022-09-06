@@ -9,15 +9,20 @@ int Prompt(string message)
     return result; // Возвращает результат
 }
 
-int SummFromMtoN(int m, int n)
+void PrintOddNumbersMtoN(int m, int n)
 {
-    if (n > m)
-        return n + SummFromMtoN(m, n - 1);
-    return m;
+    if (m <= n) 
+    {
+        if (m % 2 == 0) System.Console.Write(m);
+        PrintOddNumbersMtoN(m + 1, n);
+    }
+
+    if (m > n) return;
+    if (m % 2 == 0) System.Console.Write(m);
+    PrintOddNumbersMtoN(m + 1, n);
 }
 
-int m = Prompt("Введи число M  ");
-int n = Prompt("Введи число N  ");
+int emteredm = Prompt("Введи число M  ");
+int emteredn = Prompt("Введи число N  ");
 
-int Sum = SummFromMtoN(m, n);
-Console.WriteLine($"Сумма чисел от M до N: " + Sum);
+PrintOddNumbersMtoN (emteredm,emteredn);
